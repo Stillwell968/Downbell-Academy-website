@@ -1,151 +1,169 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.header p{
-    font-size: 4rem;
+.header .header-text {
+  font-size: 4rem;
+  font-family: "Playfair Display SC", serif;
+  text-transform: capitalize;
 }
 
-.header h2{
-    font-size: 2rem;
+.header h2 {
+  font-size: 1.5rem;
+  font-family: "Crimson Pro", serif;
 }
 
-.header .col{
-    position: relative;
+.management {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.management .col {
+  position: relative;
 }
 
-.img-txt p{
-    position: inherit;
-    top: 50%;
-    font-size: 1.5rem;
+.img-txt {
+  position: inherit;
+  top: 20%;
+  font-size: 1.6rem;
+  font-family: "Old Standard TT", serif;
 }
 
-.staff .row{
+.management img {
+  width: 5100%;
+  height: 600px;
+}
+
+/* .staff .row{
     margin-top: 70px;
-}
+} */
 
 /* employee section start */
 /* employee start */
-.employee{
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	min-height: 100vh;
+.staff-txt {
+	margin-top: 170px;
+  font-size: 3rem;
+  font-family: "Playfair Display SC", serif;
+  text-transform: capitalize;
+}
+.employee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
 }
 .employee::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	clip-path: circle(25% at right 60%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(25% at right 60%);
 }
 
 .employee::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	clip-path: circle(20% at 10% 10%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(20% at 10% 10%);
 }
 
 .employee .container {
-	position: relative;
-	z-index: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	margin: 40px 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .employee .container .card {
-	position: relative;
-	width: 300px;
-	height: 400px;
-	background: rgba(255, 255, 255, 0.05);
-	margin: 20px;
-	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-	border-radius: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	backdrop-filter: blur(10px);
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
 }
 
 .employee .container .card .content {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	transition: 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
 }
 
 .employee .container .card:hover .content {
-	transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 
 .employee .container .card .content .imgBx {
-	position: relative;
-	width: 150px;
-	height: 150px;
-	overflow: hidden;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
 }
 
 .employee .container .card .content .imgBx img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .employee .container .card .content .contentBx h3 {
-	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 500;
-	font-size: 18px;
-	text-align: center;
-	margin: 20px 0 10px;
-	line-height: 1.1em;
-	font-family: 'Mochiy Pop P One', sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 
 .employee .container .card .content .contentBx h3 span {
-	font-size: 12px;
-	font-weight: 300;
-	text-transform: initial;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
 }
 
 .employee .container .card .sci {
-	position: absolute;
-	bottom: 50px;
-	display: flex;
+  position: absolute;
+  bottom: 50px;
+  display: flex;
 }
 
 .employee .container .card .sci li {
-	list-style: none;
-	margin: 0 10px;
-	transform: translateY(40px);
-	transition: 0.5s;
-	opacity: 0;
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
 }
 
 .employee .container .card:hover .sci li {
-	transform: translateY(0px);
-	opacity: 1;
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 .employee .container .card .sci li a {
-	color: rgb(0, 0, 0);
-	font-size: 20px;
-	font-family: 'Lora', serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Lora", serif;
 }
