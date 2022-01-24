@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-top: 40px;
+    justify-content: center;
+    height: 100%;
+}
+
+.card{
+    box-shadow: 10px 10px 5px grey;
+}
